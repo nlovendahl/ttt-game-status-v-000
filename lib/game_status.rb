@@ -16,12 +16,6 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-
-def full?(board)
-  board.none? {|position| position == " "}
-end
-
-
 def won?(board)
   if board != [" ", " ", " ", " ", " ", " ", " ", " ", " "]
    WIN_COMBINATIONS.each do |combo|
@@ -30,4 +24,8 @@ def won?(board)
      end
    end
  end
+end
+
+def full?(board)
+  board.none? {|position| position == " "}
 end
