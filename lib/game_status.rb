@@ -20,7 +20,7 @@ def won?(board)
   if board != [" ", " ", " ", " ", " ", " ", " ", " ", " "]
    WIN_COMBINATIONS.each do |combo|
      if board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X" || board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O"
-       return combo
+       x_win = combo
      end
    end
  end
@@ -47,3 +47,5 @@ def over?(board)
     return false
   end
 end
+
+def winner(board)
