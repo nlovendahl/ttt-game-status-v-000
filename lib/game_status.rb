@@ -17,7 +17,7 @@ def position_taken?(board, index)
 end
 
 def won?(board)
-  if board != [" ", " ", " ", " ", " ", " ", " ", " ", " "] && draw?(board) == false
+  if board != [" ", " ", " ", " ", " ", " ", " ", " ", " "] 
    WIN_COMBINATIONS.each do |combo|
      if board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X"
        return combo
