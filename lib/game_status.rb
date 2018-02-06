@@ -26,6 +26,11 @@ def won?(board)
      end
      if x_win != false && o_win != false
        return false
+     elsif x_win != false
+       return x_win
+     elsif o_win != false
+       return o_win
+     end
    end
  end
 end
