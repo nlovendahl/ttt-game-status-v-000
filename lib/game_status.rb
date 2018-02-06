@@ -29,3 +29,11 @@ end
 def full?(board)
   board.none? {|position| position == " "}
 end
+
+def draw?(board)
+  if won?(board) == false && full?(board) == false
+    return false
+  else
+    return true
+  end
+end 
