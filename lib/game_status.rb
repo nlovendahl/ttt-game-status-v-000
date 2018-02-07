@@ -52,7 +52,7 @@ end
 
 def winner(board)
   if won?(board)
-    return combo.first
+    return board[combo.first]
   else
     return false
   end
