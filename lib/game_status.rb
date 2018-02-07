@@ -55,4 +55,5 @@ def winner(board)
     return combo.first
   else
     return false
+  end
 end
